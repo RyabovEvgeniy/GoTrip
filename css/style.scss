@@ -1,0 +1,26 @@
+@import "_null";
+
+// Основные настройки страницы
+body {
+	font-family: "Poppins", sans-serif;
+	background: #E5E5E5;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+// 
