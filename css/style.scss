@@ -3,8 +3,8 @@
 // Основные настройки страницы
 body {
 	font-family: "Poppins", sans-serif;
-	background: #E5E5E5;
-	color: #fff;
+	background: #f6f6f6;
+	color: #0f1f1c;
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 1.5;
@@ -18,9 +18,138 @@ body {
 .main {
 	flex: 1 1 auto;
 }
+.none {
+	display: none !important;
+}
+.container-right {
+	padding-left: calc((100% - 1260px) / 2 + 10px);
+}
+
+.container-left {
+	padding-right: calc((100% - 1260px) / 2 + 10px);
+}
 [class*="__container"] {
 	max-width: 1260px;
 	margin: 0 auto;
 	padding: 0px 10px;
 }
-// 
+
+// Header
+
+.header {
+	position: relative;
+	min-height: 940px;
+	background: linear-gradient(132.05deg, #428e5f -17.38%, #112120 78.4%), #204434;
+	padding-top: 44px;
+	color: #fff;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 96px;
+		background-image: url(./../img/header/header-bottom.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__top {
+		margin-bottom: 86px;
+	}
+}
+
+// Nav
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	// .nav__logo
+
+	&__logo {
+	}
+
+	// .nav__logo-link
+
+	&__logo-link {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		cursor: pointer;
+	}
+
+	// .nav__list
+
+	&__list {
+		display: flex;
+		// justify-content: space-between;
+		column-gap: 80px;
+		a {
+			position: relative;
+			&.activ::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 10px;
+				bottom: -6px;
+				// width: 35px;
+				height: 4px;
+				display: block;
+				background: #c4c4c4;
+				border-radius: 100px;
+			}
+			&:hover::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 10px;
+				bottom: -6px;
+				// width: 35px;
+				height: 4px;
+				display: block;
+				background: #c4c4c4;
+				border-radius: 100px;
+			}
+		}
+	}
+
+	// .nav__list-item
+
+	&__list-item {
+	}
+
+	// .nav__list-link
+
+	&__list-link {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 22px;
+		cursor: pointer;
+	}
+
+	// .nav__login
+
+	&__login {
+		display: flex;
+		align-items: center;
+		column-gap: 25px;
+	}
+
+	// .nav__login-link
+
+	&__login-link {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 22px;
+	}
+}
+
+// Button
+
+.btn {
+	display: inline-block;
+	padding: 13px 44px;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
+	border-radius: 100px;
+}
