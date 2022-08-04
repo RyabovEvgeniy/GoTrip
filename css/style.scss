@@ -53,8 +53,22 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+		&::before {
+			position: absolute;
+			content: "";
+			right: 57px;
+			top: 173px;
+			width: 830px;
+			height: 622px;
+			background-image: url(./../img/header/header-decor.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 98;
+		}
 	&__top {
 		margin-bottom: 86px;
+		position: relative;
+		z-index: 99;
 	}
 }
 
@@ -83,7 +97,6 @@ body {
 
 	&__list {
 		display: flex;
-		// justify-content: space-between;
 		column-gap: 80px;
 		a {
 			position: relative;
@@ -93,7 +106,6 @@ body {
 				left: 0;
 				right: 10px;
 				bottom: -6px;
-				// width: 35px;
 				height: 4px;
 				display: block;
 				background: #c4c4c4;
@@ -105,7 +117,6 @@ body {
 				left: 0;
 				right: 10px;
 				bottom: -6px;
-				// width: 35px;
 				height: 4px;
 				display: block;
 				background: #c4c4c4;
@@ -152,4 +163,93 @@ body {
 	padding: 13px 44px;
 	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
 	border-radius: 100px;
+	&:hover {
+		color: rgb(245, 233, 127);
+		transition:  color 0.2s ease-in;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+// Header content
+
+.header {
+
+	// .header__row
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	// .header__content
+
+	&__content {
+		position: relative;
+		z-index: 1;
+		color: #fff;
+		max-width: 592px;
+	}
+
+	// .header__badge
+
+	&__badge {
+		display: inline-block;
+		font-size: 18px;
+		padding: 12px 30px;
+		margin-bottom: 7px;
+		background: rgba(255, 255, 255, 0.25);
+		border-radius: 15px;
+	}
+
+	// .header__title
+
+	&__title {
+		font-weight: 400;
+		font-size: 55px;
+		margin-bottom: 30px;
+	}
+
+	// .header__text
+
+	&__text {
+		font-weight: 700;
+		opacity: 0.5;
+		margin-bottom: 68px;
+	}
+
+	// .header__btn
+
+	&__btn {
+		font-weight: 600;
+		color: #fefefe;
+		padding: 27px 48px;
+		background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+		border-radius: 27px;
+		&:hover {
+			color: rgb(245, 233, 127);
+			transition:  color 0.2s ease-in;
+		}
+		&:active {
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	// .header__img
+
+	&__img {
+		position: relative;
+		flex-grow: 1;
+		img {
+			width: 894px;
+			height: 940px;
+			position: absolute;
+			top: -180px;
+			right: -87px;
+		}
+	}
 }
