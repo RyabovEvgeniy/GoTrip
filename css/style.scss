@@ -21,6 +21,39 @@ body {
 .none {
 	display: none !important;
 }
+
+// Button
+
+.nav-btn {
+	display: inline-block;
+	padding: 13px 44px;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
+	border-radius: 100px;
+	&:hover {
+		color: rgb(245, 233, 127);
+		transition: color 0.2s ease-in;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
+.btn {
+	font-weight: 600;
+	color: #fefefe;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+	border-radius: 27px;
+	&:hover {
+		color: rgb(245, 233, 127);
+		transition: color 0.2s ease-in;
+	}
+	&:active {
+		position: relative;
+		top: 1px;
+	}
+}
+
 .container-right {
 	padding-left: calc((100% - 1260px) / 2 + 10px);
 }
@@ -53,18 +86,18 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-		&::before {
-			position: absolute;
-			content: "";
-			right: 57px;
-			top: 173px;
-			width: 830px;
-			height: 622px;
-			background-image: url(./../img/header/header-decor.svg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			z-index: 98;
-		}
+	&::before {
+		position: absolute;
+		content: "";
+		right: 57px;
+		top: 173px;
+		width: 830px;
+		height: 622px;
+		background-image: url(./../img/header/header-decor.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 98;
+	}
 	&__top {
 		margin-bottom: 86px;
 		position: relative;
@@ -156,33 +189,14 @@ body {
 	}
 }
 
-// Button
-
-.btn {
-	display: inline-block;
-	padding: 13px 44px;
-	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #ffffff;
-	border-radius: 100px;
-	&:hover {
-		color: rgb(245, 233, 127);
-		transition:  color 0.2s ease-in;
-	}
-	&:active {
-		position: relative;
-		top: 1px;
-	}
-}
-
 // Header content
 
 .header {
-
 	// .header__row
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
-
 	}
 
 	// .header__content
@@ -224,19 +238,7 @@ body {
 	// .header__btn
 
 	&__btn {
-		font-weight: 600;
-		color: #fefefe;
 		padding: 27px 48px;
-		background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
-		border-radius: 27px;
-		&:hover {
-			color: rgb(245, 233, 127);
-			transition:  color 0.2s ease-in;
-		}
-		&:active {
-			position: relative;
-			top: 1px;
-		}
 	}
 
 	// .header__img
@@ -252,4 +254,185 @@ body {
 			right: -87px;
 		}
 	}
+}
+
+// Destinations
+
+.destinations {
+	padding: 96px 0px 100px;
+	overflow-x: hidden;
+
+	// .destinations__row
+
+	&__row {
+		display: flex;
+		column-gap: 50px;
+	}
+
+	// .destinations__content
+
+	&__content {
+		max-width: 456px;
+		// margin-right: 49px;
+	}
+
+	// .destinations__title
+
+	&__title {
+		font-weight: 600;
+		font-size: 55px;
+		margin-bottom: 15px;
+		span {
+			font-size: 30px;
+		}
+	}
+
+	// .destinations__text
+
+	&__text {
+		line-height: 1.12;
+		color: rgba(15, 31, 28, 0.5);
+		margin-bottom: 60px;
+	}
+
+	// .destinations__btn
+
+	&__btn {
+		padding: 25px 45px;
+	}
+
+	// .destinations__slider
+
+	&__slider {
+		width: 1110px;
+		flex-shrink: 0;
+	}
+}
+
+// Slider
+
+// Слайдер
+.slick-slider {
+	min-width: 0;
+}
+
+// Слайдер запущен
+.slick-slider.slick-initialized {}
+
+// Слайдер с точками
+.slick-slider.slick-dotted {}
+
+// Ограничивающая оболочка
+.slick-list {
+	overflow: hidden;
+	max-width: 1110px;
+}
+
+// Лента слайдов
+.slick-track {
+	display: flex;
+	column-gap: 30px;
+	align-items: center;
+}
+
+// Слайд
+.slick-slide {
+}
+
+// Слайд активный (показывается)
+.slick-slide.slick-active {}
+
+// Слайд основной
+.slick-slide.slick-current {}
+
+
+// Слайд по центру
+.slick-slide.slick-center {}
+
+// Клонированный слайд
+.slick-slide.slick-cloned {}
+
+// Стрелка
+.slick-arrow {}
+
+// Стрелка влево
+.slick-arrow.slick-prev {}
+
+// Стрелка вправо
+.slick-arrow.slick-next {}
+
+// Стрелка не активная
+.slick-arrow.slick-disabled {}
+
+// Точки (булиты)
+.slick-dots {}
+
+.slick-dots li {}
+
+// Активная точка
+.slick-dots li.slick-active {}
+
+// Элемент точки
+.slick-dots li button {}
+
+.slider {
+	position: relative;
+	height: 456px;	
+}
+.slider .slick-arrow{
+	position: absolute;
+	z-index: 10;
+	font-size: 0px;	
+}
+.slider .slick-arrow.slick-prev {
+	left: 0;
+	top: 40%;
+	width: 68px;
+	height: 68px;
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+	border-radius: 34px;
+	transform: translateX(-50%);
+}
+.slider .slick-arrow.slick-prev::after {
+	content: "";
+	background: url('../img/destinations/arrow-left.svg') 0 0 / 100% no-repeat;
+	width: 11px;
+	height: 14px;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	z-index: 10;	
+}
+
+.slider .slick-arrow.slick-next {
+	right: 0;
+	top: 40%;
+	width: 68px;
+	height: 68px;
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+	border-radius: 34px;
+	transform: translateX(50%);
+}
+.slider .slick-arrow.slick-next::after {
+	content: "";
+	background: url('../img/destinations/arrow-right.svg') 0 0 / 100% no-repeat;
+	width: 11px;
+	height: 14px;
+	position: absolute;
+	top: 40%;
+	left: 40%;	
+}
+
+.slider__item {
+	width: 335px;
+	height: 402px;
+	border-radius: 35px;
+	overflow: hidden;
+	transition: 0.2s ease;
+}
+
+.slider__item.slick-slide.slick-current + .slick-slide.slick-active {
+	width: 380px;
+	height: 456px;
+	transition: 0.2s ease;
 }
