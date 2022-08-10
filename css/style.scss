@@ -436,3 +436,106 @@ body {
 	height: 456px;
 	transition: 0.2s ease;
 }
+
+
+// Customers
+
+.customers {
+	padding: 100px 0px 133px;
+
+	// .customers__container
+
+	&__container {
+	}
+
+	// .customers__row
+
+	&__row {
+		display: flex;
+		column-gap: 68px;
+	}
+
+	// .customers__img
+
+	&__img {
+		max-width: 478px;
+		border-radius: 60px;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+		}
+	}
+
+	// .customers__content
+
+	&__content {
+	}
+
+	// .customers__title
+
+	&__title {
+		font-size: 45px;
+		margin-bottom: 35px;
+		max-width: 565px;
+	}
+
+	// .customers__review
+
+	&__review {
+	}
+}
+.review {
+
+	// .review__client
+
+	&__client {
+		display: flex;
+		column-gap: 33px;
+		align-items: center;
+		margin-bottom: 60px;
+
+	}
+
+	// .review__client-avatar
+
+	&__client-avatar {
+		width: 134px;
+		height: 134px;
+		border-radius: 50%;
+		background-color: #FF794E;
+		overflow: hidden;
+	}
+
+	// .review__client-desc
+
+	&__client-desc {
+	}
+
+	// .review__client-name
+
+	&__client-name {
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+
+	// .review__client-country
+
+	&__client-country {
+		font-weight: 400;
+		opacity: 0.5;
+	}
+
+	// .review__text
+
+	&__text {
+		font-size: 22px;
+		opacity: 0.5;
+		max-width: 491px;
+		margin-bottom: 30px;
+	}
+
+	// .review__rating
+
+	&__rating {
+	}
+}
