@@ -50,7 +50,7 @@ html {
 /* ================== */
 body {
   font-family: "Poppins", sans-serif;
-  background: #E5E5E5;
+  background: #e5e5e5;
   color: #0f1f1c;
   font-size: 25px;
   font-weight: 500;
@@ -573,4 +573,99 @@ body {
   font-size: 20px;
   padding: 25px 55px;
   color: #fff;
+}
+
+.subscribe {
+  padding: 100px 0px 18px;
+}
+
+.subscribe__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.subscribe__title {
+  font-weight: 600;
+  font-size: 55px;
+  max-width: 494px;
+  margin-bottom: 60px;
+}
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 800px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), #c4c4c4;
+  background: -o-linear-gradient(bottom, #ffffff, #ffffff), #c4c4c4;
+  background: linear-gradient(0deg, #ffffff, #ffffff), #c4c4c4;
+  border-radius: 35px;
+  padding: 12px 15px 12px 46px;
+}
+
+.subscribe__input {
+  min-width: 248px;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(15, 31, 28, 0.5);
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(15, 31, 28, 0.5);
+}
+
+.subscribe__input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(15, 31, 28, 0.5);
+}
+
+.subscribe__input::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(15, 31, 28, 0.5);
+}
+
+.subscribe__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(15, 31, 28, 0.5);
+}
+
+.subscribe__input:focus {
+  outline: none;
+}
+
+.subscribe__button {
+  border-radius: 35px;
+  color: #fff;
+  padding: 34px 87px;
 }
