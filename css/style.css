@@ -50,7 +50,7 @@ html {
 /* ================== */
 body {
   font-family: "Poppins", sans-serif;
-  background: #f6f6f6;
+  background: #E5E5E5;
   color: #0f1f1c;
   font-size: 25px;
   font-weight: 500;
@@ -387,8 +387,8 @@ body {
   top: 40%;
   width: 68px;
   height: 68px;
-  background: -o-linear-gradient(320.46deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
-  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+  background: -o-linear-gradient(320.46deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
   border-radius: 34px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -411,8 +411,8 @@ body {
   top: 40%;
   width: 68px;
   height: 68px;
-  background: -o-linear-gradient(320.46deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
-  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+  background: -o-linear-gradient(320.46deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
   border-radius: 34px;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
@@ -492,7 +492,7 @@ body {
   width: 134px;
   height: 134px;
   border-radius: 50%;
-  background-color: #FF794E;
+  background-color: #ff794e;
   overflow: hidden;
 }
 
@@ -511,4 +511,66 @@ body {
   opacity: 0.5;
   max-width: 491px;
   margin-bottom: 30px;
+}
+
+.cta {
+  padding: 100px 0px 35px;
+}
+
+.cta__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 60px;
+  padding: 115px 0px;
+  position: relative;
+}
+
+.cta__column::before, .cta__column::after {
+  position: absolute;
+  content: "";
+  width: 63px;
+  height: 83px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta__column::before {
+  background-image: url(../img/cta/cta-decor-01.svg);
+  left: 74px;
+  bottom: 56px;
+}
+
+.cta__column::after {
+  background-image: url(../img/cta/cta-decor-02.svg);
+  top: 74px;
+  right: 80px;
+}
+
+.cta__title {
+  font-size: 45px;
+  max-width: 519px;
+  margin-bottom: 30px;
+}
+
+.cta__text {
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-bottom: 60px;
+}
+
+.cta__button {
+  font-size: 20px;
+  padding: 25px 55px;
+  color: #fff;
 }

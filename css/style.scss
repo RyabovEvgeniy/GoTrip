@@ -3,7 +3,7 @@
 // Основные настройки страницы
 body {
 	font-family: "Poppins", sans-serif;
-	background: #f6f6f6;
+	background: #E5E5E5;
 	color: #0f1f1c;
 	font-size: 25px;
 	font-weight: 500;
@@ -317,10 +317,12 @@ body {
 }
 
 // Слайдер запущен
-.slick-slider.slick-initialized {}
+.slick-slider.slick-initialized {
+}
 
 // Слайдер с точками
-.slick-slider.slick-dotted {}
+.slick-slider.slick-dotted {
+}
 
 // Ограничивающая оболочка
 .slick-list {
@@ -340,68 +342,79 @@ body {
 }
 
 // Слайд активный (показывается)
-.slick-slide.slick-active {}
+.slick-slide.slick-active {
+}
 
 // Слайд основной
-.slick-slide.slick-current {}
-
+.slick-slide.slick-current {
+}
 
 // Слайд по центру
-.slick-slide.slick-center {}
+.slick-slide.slick-center {
+}
 
 // Клонированный слайд
-.slick-slide.slick-cloned {}
+.slick-slide.slick-cloned {
+}
 
 // Стрелка
-.slick-arrow {}
+.slick-arrow {
+}
 
 // Стрелка влево
-.slick-arrow.slick-prev {}
+.slick-arrow.slick-prev {
+}
 
 // Стрелка вправо
-.slick-arrow.slick-next {}
+.slick-arrow.slick-next {
+}
 
 // Стрелка не активная
-.slick-arrow.slick-disabled {}
+.slick-arrow.slick-disabled {
+}
 
 // Точки (булиты)
-.slick-dots {}
+.slick-dots {
+}
 
-.slick-dots li {}
+.slick-dots li {
+}
 
 // Активная точка
-.slick-dots li.slick-active {}
+.slick-dots li.slick-active {
+}
 
 // Элемент точки
-.slick-dots li button {}
+.slick-dots li button {
+}
 
 .slider {
 	position: relative;
-	height: 456px;	
+	height: 456px;
 }
-.slider .slick-arrow{
+.slider .slick-arrow {
 	position: absolute;
 	z-index: 10;
-	font-size: 0px;	
+	font-size: 0px;
 }
 .slider .slick-arrow.slick-prev {
 	left: 0;
 	top: 40%;
 	width: 68px;
 	height: 68px;
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
 	border-radius: 34px;
 	transform: translateX(-50%);
 }
 .slider .slick-arrow.slick-prev::after {
 	content: "";
-	background: url('../img/destinations/arrow-left.svg') 0 0 / 100% no-repeat;
+	background: url("../img/destinations/arrow-left.svg") 0 0 / 100% no-repeat;
 	width: 11px;
 	height: 14px;
 	position: absolute;
 	top: 40%;
 	left: 40%;
-	z-index: 10;	
+	z-index: 10;
 }
 
 .slider .slick-arrow.slick-next {
@@ -409,18 +422,18 @@ body {
 	top: 40%;
 	width: 68px;
 	height: 68px;
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
 	border-radius: 34px;
 	transform: translateX(50%);
 }
 .slider .slick-arrow.slick-next::after {
 	content: "";
-	background: url('../img/destinations/arrow-right.svg') 0 0 / 100% no-repeat;
+	background: url("../img/destinations/arrow-right.svg") 0 0 / 100% no-repeat;
 	width: 11px;
 	height: 14px;
 	position: absolute;
 	top: 40%;
-	left: 40%;	
+	left: 40%;
 }
 
 .slider__item {
@@ -436,7 +449,6 @@ body {
 	height: 456px;
 	transition: 0.2s ease;
 }
-
 
 // Customers
 
@@ -485,7 +497,6 @@ body {
 	}
 }
 .review {
-
 	// .review__client
 
 	&__client {
@@ -493,7 +504,6 @@ body {
 		column-gap: 33px;
 		align-items: center;
 		margin-bottom: 60px;
-
 	}
 
 	// .review__client-avatar
@@ -502,7 +512,7 @@ body {
 		width: 134px;
 		height: 134px;
 		border-radius: 50%;
-		background-color: #FF794E;
+		background-color: #ff794e;
 		overflow: hidden;
 	}
 
@@ -537,5 +547,71 @@ body {
 	// .review__rating
 
 	&__rating {
+	}
+}
+
+// cta
+
+.cta {
+	padding: 100px 0px 35px;
+	// .cta__container
+	
+	&__container {
+	}
+	
+	// .cta__column
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		background: #fff;
+		border-radius: 60px;
+		padding: 115px 0px;
+		position: relative;
+		&::before,&::after {
+			position: absolute;
+			content: "";
+			width: 63px;
+			height: 83px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		&::before {
+			background-image: url(../img/cta/cta-decor-01.svg);
+			left: 74px;
+			bottom: 56px;
+		}
+		&::after {
+			background-image: url(../img/cta/cta-decor-02.svg);
+			top: 74px;
+			right: 80px;
+		}
+	}
+
+	// .cta__title
+
+	&__title {
+		font-size: 45px;
+		max-width: 519px;
+		margin-bottom: 30px;
+	}
+
+	// .cta__text
+
+	&__text {
+		font-size: 30px;
+		font-weight: 400;
+		opacity: 0.5;
+		margin-bottom: 60px;
+	}
+
+	// .cta__button
+
+	&__button {
+		font-size: 20px;
+		padding: 25px 55px;
+		color: #fff;
 	}
 }
