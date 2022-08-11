@@ -18,3 +18,15 @@ $(document).ready(function () {
 	});
 });
 	
+
+// Nav icon
+const navBtn = document.querySelector('.nav__toggle');
+const nav = document.querySelector('.nav')
+const menuIcon = document.querySelector('.menu-icon');
+
+
+navBtn.onclick = function () {
+	nav.classList.toggle('nav_mobile')
+	menuIcon.classList.toggle('menu-icon_active');
+	document.body.classList.toggle('no-scroll');
+};
