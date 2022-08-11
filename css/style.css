@@ -576,7 +576,7 @@ body {
 }
 
 .subscribe {
-  padding: 100px 0px 18px;
+  padding: 100px 0px 6px;
 }
 
 .subscribe__column {
@@ -668,4 +668,29 @@ body {
   border-radius: 35px;
   color: #fff;
   padding: 34px 87px;
+}
+
+.footer {
+  padding: 100px 0px 74px;
+}
+
+.nav_footer {
+  color: rgba(15, 31, 28, 0.5);
+}
+
+.nav__logo_footer {
+  color: #FF7C4E;
+}
+
+.nav__list_footer a.activ::after, .nav__list_footer a:hover::after {
+  display: none;
+}
+
+.nav__login_footer {
+  -webkit-column-gap: 66px;
+          column-gap: 66px;
+}
+
+.nav__login-link_footer {
+  color: #fff;
 }

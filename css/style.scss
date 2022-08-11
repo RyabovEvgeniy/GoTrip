@@ -620,7 +620,7 @@ body {
 // subscribe
 
 .subscribe {
-	padding: 100px 0px 18px;
+	padding: 100px 0px 6px;
 
 	// .subscribe__container
 
@@ -684,4 +684,95 @@ body {
 		color: #fff;
 		padding: 34px 87px;
 	}
+}
+
+// footer
+
+.footer {
+	padding: 100px 0px 74px;
+
+	// .footer__container
+
+	&__container {
+	}
+}
+.nav {
+
+		// .nav__footer
+
+	&_footer {
+		color: rgba(15, 31, 28, 0.5);
+	}
+
+	// .nav__logo
+
+	&__logo {
+	}
+
+	// .nav__logo_footer
+
+	&__logo_footer {
+		color: #FF7C4E;
+	}
+
+	// .nav__logo-link
+
+	&__logo-link {
+	}
+
+	// .nav__list
+
+	&__list {
+	}
+
+	// .nav__list_footer
+
+	&__list_footer {
+		a {
+			&.activ::after, &:hover::after {
+				display: none;
+			}
+		}
+	}
+
+	// .nav__list-item
+
+	&__list-item {
+	}
+
+	// .nav__list-link
+
+	&__list-link {
+	}
+
+	// .nav__login
+
+	&__login {
+	}
+
+	// .nav__login_footer
+
+	&__login_footer {
+		column-gap: 66px;
+	}
+
+	// .nav__login-item
+
+	&__login-item {
+	}
+
+	// .nav__login-link
+
+	&__login-link {
+	}
+
+	// .nav__login-link_footer
+
+	&__login-link_footer {
+		color: #fff;
+	}
+}
+.activ {
+}
+.nav-btn {
 }
