@@ -84,20 +84,9 @@ body {
 		height: 96px;
 		background-image: url(./../img/header/header-bottom.svg);
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100% 100%;
 	}
-	&::before {
-		position: absolute;
-		content: "";
-		right: 57px;
-		top: 173px;
-		width: 830px;
-		height: 622px;
-		background-image: url(./../img/header/header-decor.svg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		z-index: 98;
-	}
+
 	&__top {
 		margin-bottom: 86px;
 		position: relative;
@@ -251,6 +240,18 @@ body {
 	&__img {
 		position: relative;
 		flex-grow: 1;
+		&::before {
+			position: absolute;
+			content: "";
+			right: -42px;
+			top: 0px;
+			width: 830px;
+			height: 622px;
+			background-image: url(./../img/header/header-decor.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 98;
+		}
 		img {
 			width: 894px;
 			height: 940px;

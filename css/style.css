@@ -151,20 +151,7 @@ body {
   height: 96px;
   background-image: url(./../img/header/header-bottom.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.header::before {
-  position: absolute;
-  content: "";
-  right: 57px;
-  top: 173px;
-  width: 830px;
-  height: 622px;
-  background-image: url(./../img/header/header-decor.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 98;
+  background-size: 100% 100%;
 }
 
 .header__top {
@@ -302,6 +289,19 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.header__img::before {
+  position: absolute;
+  content: "";
+  right: -42px;
+  top: 0px;
+  width: 830px;
+  height: 622px;
+  background-image: url(./../img/header/header-decor.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 98;
 }
 
 .header__img img {
